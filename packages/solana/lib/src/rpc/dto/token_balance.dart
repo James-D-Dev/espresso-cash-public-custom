@@ -7,7 +7,7 @@ part 'token_balance.g.dart';
 /// The balance of a SPL token account
 @JsonSerializable()
 class TokenBalance {
-  const TokenBalance({required this.accountIndex, required this.mint, required this.uiTokenAmount});
+  const TokenBalance({required this.accountIndex, required this.mint, required this.uiTokenAmount, required this.owner});
 
   factory TokenBalance.fromJson(Map<String, dynamic> json) => _$TokenBalanceFromJson(json);
 

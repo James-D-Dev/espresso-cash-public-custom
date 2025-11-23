@@ -21,5 +21,7 @@ class TokenBalance {
   /// Token balance
   final TokenAmount uiTokenAmount;
 
+  final String owner;
+
   Map<String, dynamic> toJson() => _$TokenBalanceToJson(this);
 }

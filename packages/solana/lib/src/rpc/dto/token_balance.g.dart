@@ -11,10 +11,12 @@ TokenBalance _$TokenBalanceFromJson(Map<String, dynamic> json) => TokenBalance(
   accountIndex: (json['accountIndex'] as num).toInt(),
   mint: json['mint'] as String,
   uiTokenAmount: TokenAmount.fromJson(json['uiTokenAmount'] as Map<String, dynamic>),
+  owner: json['owner'] as String,
 );
 
 Map<String, dynamic> _$TokenBalanceToJson(TokenBalance instance) => <String, dynamic>{
   'accountIndex': instance.accountIndex,
   'mint': instance.mint,
   'uiTokenAmount': instance.uiTokenAmount.toJson(),
+  'owner': instance.owner,
 };

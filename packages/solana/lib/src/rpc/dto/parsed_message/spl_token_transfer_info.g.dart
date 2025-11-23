@@ -12,6 +12,7 @@ SplTokenTransferInfo _$SplTokenTransferInfoFromJson(Map<String, dynamic> json) =
       amount: json['amount'] as String,
       source: json['source'] as String,
       destination: json['destination'] as String,
+      mint: json['mint'] as String,
     );
 
 Map<String, dynamic> _$SplTokenTransferInfoToJson(SplTokenTransferInfo instance) =>
@@ -19,4 +20,5 @@ Map<String, dynamic> _$SplTokenTransferInfoToJson(SplTokenTransferInfo instance)
       'amount': instance.amount,
       'source': instance.source,
       'destination': instance.destination,
+      'mint': instance.mint,
     };

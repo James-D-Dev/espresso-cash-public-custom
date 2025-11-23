@@ -13,6 +13,7 @@ class SplTokenTransferCheckedInfo {
     required this.tokenAmount,
     required this.source,
     required this.destination,
+    required this.mint,
   });
 
   factory SplTokenTransferCheckedInfo.fromJson(Map<String, dynamic> json) =>
@@ -21,6 +22,7 @@ class SplTokenTransferCheckedInfo {
   final TokenAmount tokenAmount;
   final String source;
   final String destination;
+  final String mint;
 
   Map<String, dynamic> toJson() => _$SplTokenTransferCheckedInfoToJson(this);
 }
